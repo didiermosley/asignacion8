@@ -37,14 +37,16 @@ Partial Class Form1
         Me.btnActu = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnConsul = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(373, 19)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(351, 23)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 13)
+        Me.Label1.Size = New System.Drawing.Size(73, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Datos"
         '
@@ -130,18 +132,20 @@ Partial Class Form1
         '
         'btnRegistrar
         '
-        Me.btnRegistrar.Location = New System.Drawing.Point(488, 274)
+        Me.btnRegistrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.Location = New System.Drawing.Point(488, 261)
         Me.btnRegistrar.Name = "btnRegistrar"
-        Me.btnRegistrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegistrar.Size = New System.Drawing.Size(112, 35)
         Me.btnRegistrar.TabIndex = 11
-        Me.btnRegistrar.Text = "Registrar"
+        Me.btnRegistrar.Text = "Insertar"
         Me.btnRegistrar.UseVisualStyleBackColor = True
         '
         'btnActu
         '
-        Me.btnActu.Location = New System.Drawing.Point(184, 357)
+        Me.btnActu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnActu.Location = New System.Drawing.Point(181, 357)
         Me.btnActu.Name = "btnActu"
-        Me.btnActu.Size = New System.Drawing.Size(75, 23)
+        Me.btnActu.Size = New System.Drawing.Size(112, 35)
         Me.btnActu.TabIndex = 12
         Me.btnActu.Text = "Actualizar"
         Me.btnActu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -149,9 +153,10 @@ Partial Class Form1
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(356, 357)
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.Location = New System.Drawing.Point(339, 357)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminar.Size = New System.Drawing.Size(112, 35)
         Me.btnEliminar.TabIndex = 13
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -159,19 +164,33 @@ Partial Class Form1
         '
         'btnConsul
         '
-        Me.btnConsul.Location = New System.Drawing.Point(525, 357)
+        Me.btnConsul.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsul.Location = New System.Drawing.Point(500, 357)
         Me.btnConsul.Name = "btnConsul"
-        Me.btnConsul.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsul.Size = New System.Drawing.Size(112, 35)
         Me.btnConsul.TabIndex = 14
         Me.btnConsul.Text = "Consultar"
         Me.btnConsul.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnConsul.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(252, 411)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(271, 39)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Para eliminar o consultar solo use el campo de la cédula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " (también funciona para" &
+    " actualizar)." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "."
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnConsul)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnActu)
@@ -209,4 +228,5 @@ Partial Class Form1
     Friend WithEvents btnActu As Button
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnConsul As Button
+    Friend WithEvents Label7 As Label
 End Class
