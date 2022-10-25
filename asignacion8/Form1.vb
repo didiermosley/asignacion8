@@ -65,4 +65,8 @@ Public Class Form1
         tbProf.Clear()
         tbCarrera.Clear()
     End Sub
+
+    Private Sub btnF2_Click(sender As Object, e As EventArgs) Handles btnF2.Click
+        Form2.Show()
+    End Sub
 End Class

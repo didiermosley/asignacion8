@@ -38,6 +38,7 @@ Partial Class Form1
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnConsul = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnF2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -185,11 +186,23 @@ Partial Class Form1
     " actualizar)." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "."
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnF2
+        '
+        Me.btnF2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnF2.Location = New System.Drawing.Point(679, 416)
+        Me.btnF2.Name = "btnF2"
+        Me.btnF2.Size = New System.Drawing.Size(109, 27)
+        Me.btnF2.TabIndex = 16
+        Me.btnF2.Text = "Ir a Form 2"
+        Me.btnF2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnF2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnF2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnConsul)
         Me.Controls.Add(Me.btnEliminar)
@@ -229,4 +242,5 @@ Partial Class Form1
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnConsul As Button
     Friend WithEvents Label7 As Label
+    Friend WithEvents btnF2 As Button
 End Class
