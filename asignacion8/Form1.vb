@@ -27,8 +27,8 @@ Public Class Form1
     End Sub
 
     Private Sub btnConsul_Click(sender As Object, e As EventArgs) Handles btnConsul.Click
-        Dim cmd As New SqlCommand("SELECT * FROM Datos WHERE cedula=@ID", conn)
-        cmd.Parameters.AddWithValue("@ID", SqlDbType.Int).Value = tbCedula.Text
+        Dim cmd As New SqlCommand("SELECT * FROM Datos WHERE cedula=@cedula", conn)
+        cmd.Parameters.AddWithValue("@cedula", SqlDbType.Int).Value = tbCedula.Text
         Dim da As New SqlDataAdapter(cmd)
         Dim dt As New DataTable
 
